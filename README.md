@@ -8,3 +8,7 @@ Allows authenticated users to reserve parking slots prior to their arrival.
 Users have individual profiles to manage their reservations and personal details based on user roles.
 Users receive real-time status updates on reservations via email
 ![Picture1](https://github.com/user-attachments/assets/f16daed9-de10-4e88-af9a-6c2d8ffa9875)
+![Picture2](https://github.com/user-attachments/assets/316e1b19-af4a-46e2-bc1d-3964cdeeb5d2)
+![Picture3](https://github.com/user-attachments/assets/ea4a24d7-f472-40e7-8c85-b1052e5f0e23)
+
+![Picture4](https://github.com/user-attachments/assets/4663b68c-38fa-48cd-851e-dc98191af3aa)
