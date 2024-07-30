@@ -1,4 +1,6 @@
-Tech Stack : Node.js , Express.js , React.js , MySQL , JavaScript , Sequelize , Argon2
+Tech Stack : Node.js , Express.js , React.js , MySQL , JavaScript , Sequelize , Argon2.
+
+
 A web based application that automates administrative tasks such as allotment of parking spaces, billing,
 record-keeping and booking management.
 Developed using MVC (Model-View-Controller) architecture.
