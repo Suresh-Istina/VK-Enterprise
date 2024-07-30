@@ -1,0 +1,49 @@
+.about {
+  width: 100%;
+  padding: 6rem 0;
+  /* background: rgba(0, 0, 0, 0.8); */
+  background: #eee;
+}
+
+.about-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.about-left {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.about-right {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: auto;
+  align-items: center;
+  color: black;
+}
+
+.about h1 {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: black;
+  align-self: center;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: black;
+  align-self: center;
+}

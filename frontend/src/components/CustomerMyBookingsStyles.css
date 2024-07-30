@@ -1,0 +1,86 @@
+.my-booking-cards {
+  width: 100%;
+  padding: 6rem 1rem;
+  background-color: white;
+}
+
+.my-card-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.my-card-container .my-card {
+  border: 1px solid #eee;
+  color: #eee;
+}
+
+.my-card {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.card-complete {
+  text-align: center;
+  padding: 1rem;
+  background-color: black;
+}
+
+.card-booked {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(31, 21, 117);
+}
+
+.card-cancelled {
+  text-align: center;
+  padding: 1rem;
+  background-color: grey;
+}
+
+.card-in {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(20, 151, 48);
+}
+
+.my-card h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.my-card .bar {
+  border-bottom: 1px solid #eee;
+  width: 10%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.my-card .ftc {
+  font-size: 5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.my-booking-cards p {
+  color: #eee;
+  padding: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.my-card .btn {
+  display: block;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 980px) {
+  .my-card-container {
+    max-width: 90%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+}

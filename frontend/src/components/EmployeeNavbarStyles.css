@@ -1,0 +1,60 @@
+.employee-header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 10;
+  background-color: black;
+}
+
+.emp-nav-menu {
+  display: flex;
+}
+
+.emp-nav-menu li {
+  padding: 0 1rem;
+}
+
+.emp-nav-menu a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hamburger-emp {
+  display: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .hamburger-emp {
+    display: block;
+  }
+  .emp-nav-menu {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: -1;
+    background: rgba(0, 0, 0, 1);
+  }
+
+  .emp-nav-menu.active {
+    left: 0;
+  }
+
+  .emp-nav-menu li {
+    padding: 0.5rem 0;
+  }
+
+  .emp-nav-menu a {
+    font-size: 1rem;
+  }
+}

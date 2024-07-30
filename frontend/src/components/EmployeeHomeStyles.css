@@ -1,0 +1,109 @@
+.emp-bg {
+  width: 100%;
+  padding: 8rem 2rem 5rem 2rem;
+  background: white;
+  overflow-x: auto;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+p {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+th {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+td {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.cancel-button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #e04141;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-report {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #2d128f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.cancel-button:hover {
+  background-color: #cc1c1c;
+}
+
+.inv-tbl {
+  width: 30rem;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin: auto;
+}
+
+.inv-tbl th {
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.inv-tbl td {
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+.p-inv {
+  color: black;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}

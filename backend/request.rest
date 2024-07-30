@@ -1,0 +1,357 @@
+
+
+###
+//Login admin
+POST  http://localhost:5000/admin/login
+Content-Type: application/json
+
+{
+    "email":"istina@gmail.com",
+    "password":"123"
+}
+
+
+###
+//GET Current admin
+GET  http://localhost:5000/admin/details
+
+###
+//Create Admin
+POST  http://localhost:5000/admins
+Content-Type: application/json
+
+{
+
+    "name":"istina",
+    "email":"istina@gmail.com",
+    "password":"123",
+    "confPassword":"123",
+    "roleId":1
+  
+}
+
+###
+//Get all Admins
+GET  http://localhost:5000/admins
+
+###
+//Get Admin By Id
+GET  http://localhost:5000/admins/1
+
+###
+//Update Admin
+PATCH   http://localhost:5000/admins/1
+Content-Type: application/json
+
+{
+
+    "name":"ala",
+    "email":"xxx@gmail.com",
+    "password":"",
+    "confPassword":""
+}
+
+###
+//Delete Admin
+DELETE    http://localhost:5000/admins/1
+
+//***********************Customer*******************
+
+###
+//Login customer
+POST  http://localhost:5000/customer/login
+Content-Type: application/json
+
+{
+    "email":"istinasuresh28@gmail.com",
+    "password":"123"
+}
+
+
+###
+//GET Current customer
+GET  http://localhost:5000/customer/details
+
+
+
+
+
+###
+//Create Customer
+POST  http://localhost:5000/new-customer
+Content-Type: application/json
+
+{
+
+    "name":"Istina Suresh",
+    "email":"istinasuresh28@gmail.com",
+    "password":"123",
+    "confPassword":"123",
+    "nic":"200068003713",
+    "mobile":"0772626298"
+}
+
+###
+//Get all Customers
+GET  http://localhost:5000/customers
+
+###
+//Get Customer By Id
+GET  http://localhost:5000/customers/3
+
+
+###
+//Update Customer
+PATCH   http://localhost:5000/customers/3
+Content-Type: application/json
+
+{
+
+    "name":"Tom",
+    "email":"tom@gmail.com",
+    "password":"123",
+    "confPassword":"123",
+    "nic":"200068003712",
+    "mobile":"0772626298"
+}
+
+###
+//Delete Customer
+DELETE    http://localhost:5000/customers/11
+
+
+
+
+//***********************Employee*******************
+
+
+###
+//Login employee
+POST  http://localhost:5000/employee/login
+Content-Type: application/json
+
+{
+    "email":"emp1@gmail.com",
+    "password":"123"
+}
+
+
+###
+//GET Current employee
+GET  http://localhost:5000/employee/details
+
+
+
+
+
+###
+//Create employee
+POST  http://localhost:5000/employees
+Content-Type: application/json
+
+{
+
+    "name":"EMP4",
+    "email":"emp4@gmail.com",
+    "password":"123",
+    "confPassword":"123",
+    "mobile":"0772626298"
+}
+
+###
+//Get all employees
+GET  http://localhost:5000/employees
+
+###
+//Get employee By Id
+GET  http://localhost:5000/employees/1
+
+
+###
+//Update employee
+PATCH   http://localhost:5000/employees/6
+Content-Type: application/json
+
+{
+
+    "name":"Jenn",
+    "email":"jen@gmail.com",
+    "password":"",
+    "confPassword":"",
+    "mobile":"0772626298"
+}
+
+###
+//Delete employee
+DELETE    http://localhost:5000/employees/5
+
+
+//Slots
+
+###
+//Get all slots
+GET  http://localhost:5000/slots
+
+###
+//Get slot By Id
+GET  http://localhost:5000/slots/A1
+
+###
+//Get free slot list By size
+GET  http://localhost:5000/slots/list/20
+
+###
+//Get free slot count By size
+GET  http://localhost:5000/slots/free-count/20
+
+###
+//Get booked slot count By size
+GET  http://localhost:5000/slots/booked-count/20
+
+###
+//Create slot
+POST  http://localhost:5000/slots
+Content-Type: application/json
+
+{
+
+     "slot_id": "A6",
+      "size": "20"
+     
+}
+
+
+###
+//Update slot status
+PATCH   http://localhost:5000/slots/A3
+Content-Type: application/json
+
+{
+
+      "status":1
+}
+
+###
+//Delete slot
+DELETE    http://localhost:5000/slots/A6
+
+
+//Rate
+
+###
+//Get all rates
+GET  http://localhost:5000/rates
+
+###
+//Get rate By Id
+GET  http://localhost:5000/rates/20
+
+###
+//Create rate
+POST  http://localhost:5000/rates
+Content-Type: application/json
+
+{
+      "rate_id": "40",
+      "per_hour": 450.00,
+      "per_day": 1000.00
+}
+
+
+###
+//Update rate
+PATCH   http://localhost:5000/rates/20
+Content-Type: application/json
+
+{
+
+    "per_hour": 350.00,
+    "per_day": 950.00
+}
+
+//Role
+
+###
+//Get all roles
+GET  http://localhost:5000/roles
+
+###
+//Create role
+POST  http://localhost:5000/roles
+Content-Type: application/json
+
+{
+      "role_name": "test role"
+}
+
+
+###
+//Delete role
+DELETE    http://localhost:5000/roles/10
+
+
+//payments
+
+###
+//Get all payments
+GET  http://localhost:5000/payments
+
+###
+//Get payment By Id
+GET  http://localhost:5000/payments/7
+
+###
+//Create payment
+POST  http://localhost:5000/payments
+Content-Type: application/json
+
+{
+      "amount": 5000.00,
+      "booking_id": 1
+}
+
+//Bookings
+
+###
+//get all Booking
+GET  http://localhost:5000/bookings/
+
+###
+//get  Booking by id
+GET  http://localhost:5000/bookings/27
+
+###
+//Check In
+// 20 26 27 28 29 reset pw email, email verification
+PATCH   http://localhost:5000/check-in/27
+
+###
+//cancel booking
+PATCH   http://localhost:5000/cancel/1
+
+
+###
+//get time options
+GET  http://localhost:5000/time-options/
+
+###
+//get current bookings -booked
+GET  http://localhost:5000/booked
+
+###
+//get checked in bookings 
+GET  http://localhost:5000/checked-in
+
+###
+//get cancelled bookings 
+GET  http://localhost:5000/cancelled
+
+###
+//get completed bookings 
+GET  http://localhost:5000/completed
+
+###
+//get no shows
+GET  http://localhost:5000/no-show
+
+

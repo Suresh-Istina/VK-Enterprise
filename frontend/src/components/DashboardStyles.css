@@ -1,0 +1,51 @@
+.admin-bg {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin-dashboard {
+  max-width: 100%;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.card1-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the start of the cross axis (top) */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  gap: 200px; /* Add some space between cards */
+}
+
+.card1 {
+  flex: 1 1 300px; /* Flex grow, flex shrink, flex basis */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+}
+
+.canvas-style {
+  width: 100%;
+  height: auto;
+}
+
+.admin-h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-left: 35%;
+}
+.admin-h {
+  font-size: 1.4rem;
+  padding: 1rem;
+  margin-left: 23%;
+}
+.admin-p {
+  color: black;
+  padding: 0.2rem 0;
+  font-size: 2rem;
+  margin-left: 35%;
+  margin-bottom: 1rem;
+}
